@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "cosmos-scripts"
+version = "0.1.0"
+description = ""
+authors = ["Dylan Schultz <9121234+dylanschultzie@users.noreply.github.com>"]
+license = "Apache 2.0"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+cosmpy = "^0.9.1"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.0.272"
+black = "^22.6.0"
+
+[tool.black]
+line-length = 120
+
+[tool.ruff]
+line-length = 120
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
