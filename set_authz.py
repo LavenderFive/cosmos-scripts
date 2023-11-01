@@ -68,7 +68,9 @@ def main(network_name: str):
     tx.add_message(msg)
 
     tx = prepare_and_broadcast_basic_transaction(ledger, tx, granter_wallet)
-    tx.wait_to_complete()
+    result = tx.wait_to_complete()
+    print(result.response)
+
 
 if __name__ == "__main__":
     main(network_name="osmosis")
